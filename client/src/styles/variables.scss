@@ -13,3 +13,33 @@ $white: #fff;
 // FONTS -
 $Ubuntu: "Ubuntu", sans-serif;
 $NanumGothic: "Nanum Gothic", sans-serif;
+
+// BREAKPOINTS
+
+@mixin breakpoint($point) {
+    @if if $point == xl {
+        // 1120px
+        @media (min-width: 70em) {
+            @content;
+        }
+    } @else if $point == lg {
+        // 1024px
+        @media (min-width: 64em) {
+            @content;
+        }
+    } @else if $point == md {
+        // 768px
+        @media (min-width: 48em) {
+            @content;
+        }
+    } @else if $point == sm {
+        // 600px
+        @media (min-width: 37.5em) {
+            @content;
+        }
+    } @else if $point == sm-only {
+        @media (max-width: 37.5em - 1px) {
+            @content;
+        }
+    }
+}
