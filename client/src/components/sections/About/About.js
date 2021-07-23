@@ -1,8 +1,20 @@
 import React from "react";
+import Card from "../../../UI/Card/Card";
 import SectionHeading from "../../../UI/SectionLayout/SectionHeading/SectionHeading";
 import SectionLayout from "./../../../UI/SectionLayout/SectionLayout";
+import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs } from "react-icons/fa";
+import { SiJavascript, SiMongodb } from "react-icons/si";
 
 import classes from "./About.module.scss";
+
+const technologies = [
+    { name: "HTML", img: <FaHtml5 /> },
+    { name: "CSS", img: <FaCss3Alt /> },
+    { name: "JavaScript", img: <SiJavascript /> },
+    { name: "React", img: <FaReact /> },
+    { name: "Node.js", img: <FaNodeJs /> },
+    { name: "MongoDB", img: <SiMongodb /> },
+];
 
 const About = () => {
     return (
@@ -23,6 +35,26 @@ const About = () => {
                         culpa adipisci odit labore et quae a facilis sunt repellat. Tempora eum
                         totam facere dolorem molestias.
                     </p>
+                </div>
+            </div>
+            <div className={classes.technologies}>
+                <div className={classes.technologies__header}>
+                    <span className={classes.arrow}>&lt;</span>
+                    technologies
+                    <span className={classes.arrow}>&gt;</span>
+                </div>
+                <div className={classes.technologies__grid}>
+                    {technologies.map(({ name, img }) => (
+                        <Card>
+                            <div className={classes.technology__img}>{img}</div>
+                            <h2 className={classes.technology__name}>{name}</h2>
+                        </Card>
+                    ))}
+                </div>
+                <div className={classes.technologies__footer}>
+                    <span className={classes.arrow}>&lt;/</span>
+                    technologies
+                    <span className={classes.arrow}>&gt;</span>
                 </div>
             </div>
             <div className={classes["about__section-BGbottom"]} />

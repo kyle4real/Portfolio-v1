@@ -26,10 +26,17 @@
     position: relative;
     min-height: 60vh;
     display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+    @include breakpoint(md) {
+        flex-direction: row;
+        gap: 3rem;
+    }
 }
 
 .about {
-    width: 50%;
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
@@ -39,6 +46,10 @@
         flex-direction: column;
         gap: 1.5rem;
 
+        @include breakpoint(md) {
+            width: 90%;
+        }
+
         .description-txt {
             color: $silverChalice;
         }
@@ -46,4 +57,57 @@
 }
 
 .technologies {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, fill);
+        row-gap: 1rem;
+        column-gap: 0.5rem;
+
+        @include breakpoint(md) {
+            grid-template-columns: 1fr;
+        }
+
+        @include breakpoint(lg) {
+            grid-template-columns: 1fr 1fr;
+        }
+        .technology__img {
+            color: $lightGray;
+            font-size: 1.75rem;
+            display: flex;
+            align-items: center;
+
+            @include breakpoint(sm) {
+                font-size: 2rem;
+            }
+        }
+
+        .technology__name {
+            font-size: 1.2rem;
+        }
+    }
+
+    &__header {
+        color: $silverChalice;
+        text-align: start;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+
+    &__footer {
+        color: $silverChalice;
+        text-align: end;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+
+    .arrow {
+        color: $lightGray;
+    }
 }
