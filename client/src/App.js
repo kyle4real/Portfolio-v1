@@ -1,15 +1,10 @@
 import React from "react";
-import Header from "./components/Header/Header";
+import Home from "./pages/Home";
 
 function App() {
     return (
         <React.Fragment>
-            <Header />
-            <main className="App">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex molestiae
-                blanditiis necessitatibus, omnis hic doloribus officia saepe alias aperiam. Corporis
-                temporibus laboriosam maxime, unde corrupti accusamus illum? Mollitia, ad.
-            </main>
+            <Home />
         </React.Fragment>
     );
 }
