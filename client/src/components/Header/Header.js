@@ -35,7 +35,7 @@ const Header = () => {
                     >
                         <ul>
                             <li>
-                                <a href="/">About</a>
+                                <a href="#about">About</a>
                             </li>
                             <li>
                                 <a href="/">Projects</a>

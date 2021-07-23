@@ -28,3 +28,11 @@ main {
         margin: 0 auto;
     }
 }
+
+p {
+    font-family: $NanumGothic;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    font-size: 1rem;
+    font-weight: 700;
+}

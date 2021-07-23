@@ -1,0 +1,49 @@
+@import "./../../../styles/variables.scss";
+
+.about__section-BGtop {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 300%;
+    height: calc(100% + 5rem);
+    transform: rotateZ(-5deg) translateY(-5rem);
+    background: $bloodRed;
+    z-index: -1;
+}
+
+.about__section-BGbottom {
+    position: absolute;
+    bottom: 0;
+    right: -100%;
+    width: 300%;
+    height: calc(100% + 5rem);
+    transform: rotateZ(5deg) translateY(5rem);
+    background: $bloodRed;
+    z-index: -1;
+}
+
+.about__section-container {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+}
+
+.about {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    &__descriptions {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .description-txt {
+            color: $silverChalice;
+        }
+    }
+}
+
+.technologies {
+}
