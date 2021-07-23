@@ -24,7 +24,7 @@ $transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 // BREAKPOINTS
 
 @mixin breakpoint($point) {
-    @if if $point == xl {
+    @if $point == xl {
         // 1120px
         @media (min-width: 70em) {
             @content;
