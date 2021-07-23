@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header/Header";
+import Hero from "../components/sections/Hero/Hero";
 import PageLayout from "../UI/PageLayout/PageLayout";
 
 const Home = () => {
@@ -7,9 +8,7 @@ const Home = () => {
         <PageLayout>
             <Header />
             <main className="App">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex molestiae
-                blanditiis necessitatibus, omnis hic doloribus officia saepe alias aperiam. Corporis
-                temporibus laboriosam maxime, unde corrupti accusamus illum? Mollitia, ad.
+                <Hero />
             </main>
         </PageLayout>
     );
