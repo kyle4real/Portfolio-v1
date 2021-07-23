@@ -1,0 +1,27 @@
+@import "./reset.scss";
+@import "./variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Ubuntu:wght@400;700&display=swap");
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    background: $eerieBlack;
+    color: $lightGray;
+    font-family: $Ubuntu;
+}
+
+main {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1600px;
+    min-height: 100vh;
+}
