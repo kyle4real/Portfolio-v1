@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { CgMenuRight, CgClose } from "react-icons/cg";
 import useWindowSize from "../../hooks/useWindowSize";
-import Modal from "../../UI/Modal/Modal";
 
 import classes from "./Header.module.scss";
 import Nav from "./Nav/Nav";

@@ -1,1 +1,11 @@
 @import "./../../../styles/variables.scss";
+
+.projects__section-container {
+    padding-top: 250px;
+}
+
+.projects__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
