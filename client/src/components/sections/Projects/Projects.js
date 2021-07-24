@@ -12,6 +12,7 @@ const Projects = () => {
             <ul className={classes.projects__list}>
                 <Project />
                 <Project />
+                <Project />
             </ul>
         </SectionLayout>
     );

@@ -7,9 +7,4 @@
 .projects__list {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
-
-    @include breakpoint(md) {
-        gap: 5rem;
-    }
 }

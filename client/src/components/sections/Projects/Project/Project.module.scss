@@ -1,15 +1,33 @@
 @import "./../../../../styles/variables.scss";
 
 .project {
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
     display: grid;
     position: relative;
     align-items: center;
     grid-template-columns: repeat(12, 1fr);
+    box-shadow: $boxShadow;
+    cursor: pointer;
+
+    @include breakpoint(md-only) {
+        &:hover .project__content__title a {
+            color: $white;
+        }
+    }
+
+    @include breakpoint(md) {
+        cursor: initial;
+        box-shadow: none;
+
+        &:not(:last-child) {
+            margin-bottom: 5rem;
+        }
+    }
 
     &:nth-of-type(2n + 1) .project__content {
-        // grid-column: 1 / -1;
         text-align: left;
-        // padding: 2.5rem;
 
         @include breakpoint(md) {
             grid-column: 6 / -1;
@@ -39,9 +57,13 @@
 
 .project__content {
     grid-area: 1 / 1 / -1 / -1;
-    padding: 1rem;
+    padding: 1.2rem;
     z-index: 2;
     position: relative;
+
+    @include breakpoint(sm) {
+        padding: 2rem;
+    }
 
     @include breakpoint(md) {
         padding: 0;
@@ -55,17 +77,28 @@
     &__pre {
         text-shadow: 0px 0px 3px rgba($richBlack, 0.8);
         color: $rubyRed;
-        font-size: 1rem;
+        font-size: 1.1rem;
         font-weight: 800;
         margin-bottom: 0.6rem;
+        @include breakpoint(md) {
+            font-size: 1rem;
+        }
     }
     &__title {
         a {
             color: $lightGray;
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             text-decoration: none;
             font-weight: 800;
             letter-spacing: 0.9px;
+            transition: $transition;
+
+            @include breakpoint(md) {
+                font-size: 1.4rem;
+                &:hover {
+                    color: $white;
+                }
+            }
         }
         margin-bottom: 1.75rem;
     }
@@ -81,20 +114,38 @@
     }
     &__tech {
         display: flex;
-        gap: 1rem;
         li {
             cursor: pointer;
             color: $lightGray;
-            font-size: 1rem;
+            font-size: 1.1rem;
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+
+            @include breakpoint(md) {
+                font-size: 1rem;
+            }
         }
         margin-bottom: 1.15rem;
     }
     &__links {
         display: flex;
-        gap: 1rem;
+
         a {
             color: $lightGray;
-            font-size: 1.5rem;
+            font-size: 2rem;
+            transition: $transition;
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+
+            &:hover {
+                color: $white;
+            }
+
+            @include breakpoint(md) {
+                font-size: 1.6rem;
+            }
         }
     }
 }
@@ -114,11 +165,12 @@
         text-decoration: none;
 
         .img__wrap {
-            background: $bloodRed;
+            background: $eerieBlack;
             display: flex;
             border-radius: $borderRadius;
 
             @include breakpoint(md) {
+                background: $bloodRed;
                 max-width: 600px;
                 &:hover img {
                     opacity: 1;

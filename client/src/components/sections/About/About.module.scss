@@ -28,33 +28,30 @@
 
 .wrapper {
     position: relative;
-    // min-height: 60vh;
     display: flex;
     flex-direction: column;
-    gap: 5rem;
 
     @include breakpoint(md) {
         flex-direction: row;
-        gap: 3rem;
     }
 }
 
 .about {
+    margin-bottom: 6rem;
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
 
+    @include breakpoint(md) {
+        margin-bottom: 0;
+        margin-right: 6rem;
+    }
     &__descriptions {
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
-
-        @include breakpoint(md) {
-            width: 90%;
-        }
 
         .description-txt {
+            &:not(:last-child) {
+                margin-bottom: 1.75rem;
+            }
             color: $lightGray;
         }
     }
@@ -65,7 +62,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 2rem;
 
     &__grid {
         display: grid;
@@ -103,12 +99,16 @@
 
     &__header,
     &__footer {
-        color: $cultured;
+        color: $silverChalice;
         font-size: 1.1rem;
         letter-spacing: 1px;
         font-weight: 800;
     }
+    &__header {
+        margin-bottom: 1.5rem;
+    }
     &__footer {
+        margin-top: 1.5rem;
         text-align: end;
     }
 
