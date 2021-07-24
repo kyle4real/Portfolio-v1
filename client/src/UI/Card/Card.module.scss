@@ -4,12 +4,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 0.75rem 1.25rem;
+    flex-wrap: nowrap;
+    padding: 0.75rem 0.75rem;
     background: $eerieBlack;
     border-radius: $borderRadius;
     color: $lightGray;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 2px rgba($richBlack, 0.2),
         0 4px 4px rgba($richBlack, 0.15), 0 8px 8px rgba($richBlack, 0.1),
         0 16px 16px rgba($richBlack, 0.05);
+
+    @include breakpoint(sm) {
+        padding: 0.75rem 1.25rem;
+    }
 }

@@ -51,7 +51,7 @@
         }
 
         .description-txt {
-            color: $silverChalice;
+            color: $lightGray;
         }
     }
 }
@@ -79,7 +79,7 @@
         }
         .technology__img {
             color: $lightGray;
-            font-size: 1.75rem;
+            font-size: 1.5rem;
             display: flex;
             align-items: center;
 
@@ -89,25 +89,41 @@
         }
 
         .technology__name {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
+
+            @include breakpoint(sm) {
+                font-size: 1.2rem;
+            }
         }
     }
 
-    &__header {
-        color: $silverChalice;
-        text-align: start;
-        font-size: 1.2rem;
-        letter-spacing: 1px;
-    }
-
+    &__header,
     &__footer {
-        color: $silverChalice;
-        text-align: end;
-        font-size: 1.2rem;
+        color: $cultured;
+        font-size: 1.1rem;
         letter-spacing: 1px;
+        font-weight: 800;
+    }
+    &__footer {
+        text-align: end;
     }
 
     .arrow {
-        color: $lightGray;
+        padding: 0 3px;
+        font-weight: 400;
+        color: $silverChalice;
+    }
+
+    .react {
+        animation: spin 8s linear infinite;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }

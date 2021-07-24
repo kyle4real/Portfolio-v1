@@ -5,27 +5,35 @@
 *,
 ::before,
 ::after {
-    box-sizing: border-box;
+    box-sizing: inherit;
     margin: 0;
+}
+
+html {
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
     margin: 0;
     width: 100%;
-    min-height: 100%;
-    overflow-x: hidden;
     background: $eerieBlack;
     color: $lightGray;
     font-family: $Ubuntu;
+    overflow: hidden;
 }
 
 main {
-    margin: 0 3rem;
-    width: calc(100% - 6rem);
+    flex-direction: column;
+    margin: 0 1.5rem;
+    width: calc(100% - 3rem);
     max-width: 1300px;
     min-height: 100vh;
+
     @include breakpoint(xl) {
         margin: 0 auto;
+        width: 100%;
     }
 }
 

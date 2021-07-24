@@ -11,7 +11,7 @@ const technologies = [
     { name: "HTML", img: <FaHtml5 /> },
     { name: "CSS", img: <FaCss3Alt /> },
     { name: "JavaScript", img: <SiJavascript /> },
-    { name: "React", img: <FaReact /> },
+    { name: "React", img: <FaReact className={classes.react} /> },
     { name: "Node.js", img: <FaNodeJs /> },
     { name: "MongoDB", img: <SiMongodb /> },
 ];
