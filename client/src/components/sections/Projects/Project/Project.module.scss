@@ -166,7 +166,6 @@
 
         .img__wrap {
             background: $eerieBlack;
-            display: flex;
             border-radius: $borderRadius;
 
             @include breakpoint(md) {
