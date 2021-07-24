@@ -3,7 +3,25 @@
 .section-heading {
     font-size: 2rem;
     text-align: start;
-    color: $cultured;
+    color: $lightGray;
     font-weight: 800;
     margin-bottom: 3rem;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: relative;
+        display: inline-block;
+        top: -0.5rem;
+        left: 1rem;
+        border-radius: $borderRadius;
+        height: 1px;
+        width: 200px;
+        background: $silverChalice;
+
+        @include breakpoint(sm-only) {
+            width: 100%;
+            left: 0;
+        }
+    }
 }
