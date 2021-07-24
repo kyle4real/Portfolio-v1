@@ -27,6 +27,7 @@ body {
 main {
     flex-direction: column;
     margin: 0 1.5rem;
+    // padding: 0 1rem;
     width: calc(100% - 3rem);
     max-width: 1300px;
     min-height: 100vh;
@@ -39,8 +40,8 @@ main {
 
 p {
     font-family: $NanumGothic;
-    letter-spacing: 1px;
+    letter-spacing: 1.2px;
     line-height: 1.6;
     font-size: 1rem;
-    font-weight: 700;
+    // font-weight: 700;
 }
