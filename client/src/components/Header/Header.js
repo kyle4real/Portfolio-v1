@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { CgMenuRight, CgClose } from "react-icons/cg";
 import useWindowSize from "../../hooks/useWindowSize";
+import Logo from "../Logo/Logo";
 
 import classes from "./Header.module.scss";
 import Nav from "./Nav/Nav";
@@ -24,7 +25,7 @@ const Header = () => {
         <React.Fragment>
             <header className={classes.header}>
                 <div className={classes["header__logo"]}>
-                    <h1>dev4real</h1>
+                    <Logo />
                 </div>
                 <Nav />
                 <div className={classes["header__menu-container"]}>

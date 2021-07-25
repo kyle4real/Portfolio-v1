@@ -1,0 +1,23 @@
+@import "./../../styles/variables.scss";
+
+.footer__section-container {
+    margin-top: 100px;
+    padding-bottom: 25px;
+}
+
+.footer {
+    text-align: center;
+
+    &__logo {
+        margin-bottom: 1rem;
+    }
+
+    &__tagline {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    &__link {
+        font-size: 2rem;
+    }
+}
