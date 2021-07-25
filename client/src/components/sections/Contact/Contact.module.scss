@@ -1,0 +1,98 @@
+@import "./../../../styles/variables.scss";
+
+.contact__section-container {
+    max-width: 900px;
+}
+
+.contact {
+    display: flex;
+    margin-bottom: 5rem;
+    .content {
+        flex: 1;
+        &__pre {
+            margin-bottom: 1rem;
+            font-size: 2.4rem;
+            color: $rubyRed;
+            font-weight: 800;
+            @include breakpoint(sm-only) {
+                text-align: center;
+            }
+        }
+        &__description {
+            margin-bottom: 2.4rem;
+            width: 100%;
+            @include breakpoint(sm-only) {
+                text-align: center;
+            }
+        }
+        &__btn {
+            @include breakpoint(sm-only) {
+                margin: 0 auto;
+                width: 80%;
+            }
+        }
+    }
+    &__img {
+        flex: 1;
+        display: none;
+        justify-content: flex-end;
+        align-items: center;
+        img {
+            width: 70%;
+            height: auto;
+        }
+
+        @include breakpoint(md) {
+            display: flex;
+        }
+    }
+}
+
+.info {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @include breakpoint(md) {
+        flex-direction: row;
+    }
+
+    &__card {
+        border-top: 10px solid $rubyRed;
+        // font-weight: 800;
+        background: $silverChalice;
+        flex: 1;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+
+        @include breakpoint(md) {
+            &:not(:last-child) {
+                margin-bottom: 0;
+                margin-right: 2rem;
+            }
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            &__icon {
+                margin: 1rem;
+                color: $eerieBlack;
+                font-size: 2rem;
+            }
+
+            &__value {
+                color: $eerieBlack;
+                letter-spacing: 2px;
+                padding-top: 1rem;
+                position: relative;
+            }
+        }
+    }
+}

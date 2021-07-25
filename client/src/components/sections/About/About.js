@@ -46,7 +46,7 @@ const About = () => {
                     </div>
                     <div className={classes.technologies__grid}>
                         {technologies.map(({ name, img }) => (
-                            <Card>
+                            <Card className={classes.technology}>
                                 <div className={classes.technology__img}>{img}</div>
                                 <h2 className={classes.technology__name}>{name}</h2>
                             </Card>

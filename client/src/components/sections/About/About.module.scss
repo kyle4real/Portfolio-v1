@@ -77,22 +77,26 @@
         @include breakpoint(lg) {
             grid-template-columns: 1fr 1fr;
         }
-        .technology__img {
-            color: $lightGray;
-            font-size: 1.5rem;
-            display: flex;
-            align-items: center;
 
-            @include breakpoint(sm) {
-                font-size: 2rem;
+        .technology {
+            justify-content: space-between;
+            .technology__img {
+                color: $lightGray;
+                font-size: 1.5rem;
+                display: flex;
+                align-items: center;
+
+                @include breakpoint(sm) {
+                    font-size: 2rem;
+                }
             }
-        }
 
-        .technology__name {
-            font-size: 1.1rem;
+            .technology__name {
+                font-size: 1.1rem;
 
-            @include breakpoint(sm) {
-                font-size: 1.2rem;
+                @include breakpoint(sm) {
+                    font-size: 1.2rem;
+                }
             }
         }
     }
