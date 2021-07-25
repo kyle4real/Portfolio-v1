@@ -32,7 +32,7 @@ const infoData = [
 
 const Contact = () => {
     return (
-        <SectionLayout className={classes["contact__section-container"]}>
+        <SectionLayout className={classes["contact__section-container"]} id="contact">
             <SectionHeading>Ready To Talk?</SectionHeading>
             <div className={classes.contact}>
                 <div className={classes.content}>
