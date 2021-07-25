@@ -15,4 +15,15 @@
     cursor: pointer;
     font-family: inherit;
     font-size: inherit;
+    transition: $transition;
+
+    &:hover,
+    &:focus {
+        color: $cultured;
+        background: rgba($rubyRed, 0.2);
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
 }
