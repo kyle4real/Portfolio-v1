@@ -61,7 +61,7 @@
     &__card {
         border-top: 10px solid $rubyRed;
         // font-weight: 800;
-        background: $silverChalice;
+        background: $lightGray;
         flex: 1;
 
         &:not(:last-child) {
@@ -90,7 +90,7 @@
             &__value {
                 color: $eerieBlack;
                 letter-spacing: 2px;
-                padding-top: 1rem;
+                padding: 0.5rem 0;
                 position: relative;
             }
         }

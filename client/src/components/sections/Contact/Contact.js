@@ -58,24 +58,6 @@ const Contact = () => {
                         </div>
                     </Card>
                 ))}
-                {/* <Card className={classes.info__card}>
-                    <div className={classes.card}>
-                        <AiOutlineMail className={classes.card__icon} />
-                        <div>test</div>
-                    </div>
-                </Card>
-                <Card className={classes.info__card}>
-                    <div className={classes.card}>
-                        <IoLocationOutline className={classes.card__icon} />
-                        <div>test</div>
-                    </div>
-                </Card>
-                <Card className={classes.info__card}>
-                    <div className={classes.card}>
-                        <AiOutlinePhone className={classes.card__icon} />
-                        <div>test</div>
-                    </div>
-                </Card> */}
             </div>
         </SectionLayout>
     );
