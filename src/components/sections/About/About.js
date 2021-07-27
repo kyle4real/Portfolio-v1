@@ -5,7 +5,6 @@ import SectionLayout from "./../../../UI/SectionLayout/SectionLayout";
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs } from "react-icons/fa";
 import { SiJavascript, SiMongodb } from "react-icons/si";
 
-import styled from "styled-components";
 import classes from "./About.module.scss";
 
 const technologies = [
