@@ -5,6 +5,7 @@ import SectionLayout from "./../../../UI/SectionLayout/SectionLayout";
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs } from "react-icons/fa";
 import { SiJavascript, SiMongodb } from "react-icons/si";
 
+import styled from "styled-components";
 import classes from "./About.module.scss";
 
 const technologies = [
@@ -46,7 +47,7 @@ const About = () => {
                     </div>
                     <div className={classes.technologies__grid}>
                         {technologies.map(({ name, img }) => (
-                            <Card className={classes.technology}>
+                            <Card className={classes.technology__card}>
                                 <div className={classes.technology__img}>{img}</div>
                                 <h2 className={classes.technology__name}>{name}</h2>
                             </Card>
@@ -63,5 +64,9 @@ const About = () => {
         </SectionLayout>
     );
 };
+
+// const Technology = styled.div`
+//     width: 100%;
+// `;
 
 export default About;

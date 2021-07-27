@@ -29,7 +29,7 @@ const Hero = () => {
                 </p>
             </div>
             <div>
-                <Button>Send Email</Button>
+                <Button className={classes.hero__btn}>Send Email</Button>
             </div>
         </SectionLayout>
     );

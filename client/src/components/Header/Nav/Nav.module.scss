@@ -16,6 +16,11 @@
             a {
                 text-decoration: none;
                 color: $lightGray;
+                transition: $transition;
+
+                &:hover {
+                    color: $cultured;
+                }
             }
         }
     }
@@ -46,6 +51,10 @@
             a {
                 text-decoration: none;
                 color: $lightGray;
+
+                &:hover {
+                    color: $cultured;
+                }
             }
         }
     }

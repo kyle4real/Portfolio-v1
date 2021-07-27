@@ -78,13 +78,24 @@
             grid-template-columns: 1fr 1fr;
         }
 
-        .technology {
+        .technology__card {
             justify-content: space-between;
+            user-select: none;
+            transition: $transition;
+
+            &:hover {
+                box-shadow: 1px 1px 1px 1px rgba($richBlack, 0.3);
+            }
+            &:hover .technology__img {
+                color: $rubyRed;
+            }
+
             .technology__img {
                 color: $lightGray;
                 font-size: 1.5rem;
                 display: flex;
                 align-items: center;
+                transition: $transition;
 
                 @include breakpoint(sm) {
                     font-size: 2rem;
@@ -103,10 +114,10 @@
 
     &__header,
     &__footer {
-        color: $silverChalice;
-        font-size: 1.1rem;
+        color: $white;
+        font-size: 1.2rem;
         letter-spacing: 1px;
-        font-weight: 800;
+        // font-weight: 800;
     }
     &__header {
         margin-bottom: 1.5rem;
