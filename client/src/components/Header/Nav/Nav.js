@@ -3,20 +3,22 @@ import Button from "../../../UI/Button/Button";
 
 import classes from "./Nav.module.scss";
 
-const Nav = ({ isMenu }) => {
+const Nav = ({ isMenu, menuToggle }) => {
     return (
         <nav className={isMenu ? classes.menu__nav : classes.nav}>
             <ul>
                 <li>
-                    <a href="#about">About</a>
+                    <a href="#about" onClick={menuToggle}>
+                        About
+                    </a>
                 </li>
-                <li>
+                <li onClick={menuToggle}>
                     <a href="#projects">Projects</a>
                 </li>
-                <li>
+                <li onClick={menuToggle}>
                     <a href="#contact">Contact</a>
                 </li>
-                <li>
+                <li onClick={menuToggle}>
                     <a href="#blog">Blog</a>
                 </li>
             </ul>

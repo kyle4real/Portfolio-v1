@@ -21,6 +21,12 @@ const Header = () => {
         setMenuOpen((p) => !p);
     };
 
+    const menuToggle = !menuOpen ? (
+        <CgMenuRight onClick={handleMenuToggle} />
+    ) : (
+        <CgClose onClick={handleMenuToggle} />
+    );
+
     return (
         <React.Fragment>
             <header className={classes.header}>
@@ -29,15 +35,9 @@ const Header = () => {
                 </div>
                 <Nav />
                 <div className={classes["header__menu-container"]}>
-                    <div className={classes.menu__toggle}>
-                        {!menuOpen ? (
-                            <CgMenuRight onClick={handleMenuToggle} />
-                        ) : (
-                            <CgClose onClick={handleMenuToggle} />
-                        )}
-                    </div>
+                    <div className={classes.menu__toggle}>{menuToggle}</div>
                     <aside className={`${classes.menu} ${menuOpen && classes["menu-show"]}`}>
-                        <Nav isMenu />
+                        <Nav isMenu menuToggle={handleMenuToggle} />
                     </aside>
                 </div>
             </header>
