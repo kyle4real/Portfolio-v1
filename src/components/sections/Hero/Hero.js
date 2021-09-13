@@ -18,14 +18,14 @@ const Hero = () => {
             </div>
             <div>
                 <h2 className={`${classes["large-txt"]} ${classes["large-txt-2"]}`}>
-                    I build web applications
+                    I building modern web apps
                 </h2>
             </div>
             <div>
                 <p className={classes["description-txt"]}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla aliquam soluta
-                    dicta quas numquam fugit laboriosam blanditiis dolores rem, repudiandae saepe
-                    cumque distinctio maxime tempora provident deserunt perspiciatis magni cum.
+                    Welcome to my portfolio! It's built from scratch using React and SCSS, though I
+                    much rather have used styled-components, but that conversation is for another
+                    time! Anyway... hi, I'm a Fullstack engineer who specializes in the MERN stack.
                 </p>
             </div>
             <div>
