@@ -6,5 +6,13 @@
     font-weight: 800;
     color: $rubyRed;
     text-decoration: none;
-    display: block;
+    display: inline-block;
+
+    span {
+        text-align: center;
+        display: block;
+        font-size: 14px;
+        color: $silverChalice;
+        font-weight: 200;
+    }
 }

@@ -8,6 +8,9 @@ const Logo = ({ className }) => {
     return (
         <AnchorLink className={`${classes.logo} ${className}`} href="#hero">
             Kyle Friel
+            <span>
+                {"<"}portfolio{" />"}
+            </span>
         </AnchorLink>
     );
 };

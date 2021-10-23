@@ -20,9 +20,9 @@ const Nav = ({ isMenu, menuToggle }) => {
                 <li onClick={menuToggle}>
                     <AnchorLink href="#contact">Contact</AnchorLink>
                 </li>
-                <li onClick={menuToggle}>
+                {/* <li onClick={menuToggle}>
                     <AnchorLink href="#blog">Blog</AnchorLink>
-                </li>
+                </li> */}
             </ul>
             <Button className={classes["nav__resume"]}>Resume</Button>
         </nav>
