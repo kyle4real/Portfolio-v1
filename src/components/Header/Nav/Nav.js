@@ -3,23 +3,25 @@ import Button from "../../../UI/Button/Button";
 
 import classes from "./Nav.module.scss";
 
+import AnchorLink from "react-anchor-link-smooth-scroll";
+
 const Nav = ({ isMenu, menuToggle }) => {
     return (
         <nav className={isMenu ? classes.menu__nav : classes.nav}>
             <ul>
                 <li>
-                    <a href="#about" onClick={menuToggle}>
+                    <AnchorLink href="#about" onClick={menuToggle}>
                         About
-                    </a>
+                    </AnchorLink>
                 </li>
                 <li onClick={menuToggle}>
-                    <a href="#projects">Projects</a>
+                    <AnchorLink href="#projects">Projects</AnchorLink>
                 </li>
                 <li onClick={menuToggle}>
-                    <a href="#contact">Contact</a>
+                    <AnchorLink href="#contact">Contact</AnchorLink>
                 </li>
                 <li onClick={menuToggle}>
-                    <a href="#blog">Blog</a>
+                    <AnchorLink href="#blog">Blog</AnchorLink>
                 </li>
             </ul>
             <Button className={classes["nav__resume"]}>Resume</Button>

@@ -25,7 +25,7 @@ const infoData = [
     {
         id: 3,
         type: "location",
-        value: "Schwenksville, Pennsylvania (19473)",
+        value: "United States",
         icon: <IoLocationOutline className={classes.card__icon} />,
     },
 ];

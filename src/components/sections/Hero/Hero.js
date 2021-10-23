@@ -9,7 +9,7 @@ const Hero = () => {
     const timeOfDay = hour < 12 ? "morning" : hour > 18 ? "evening" : "afternoon";
 
     return (
-        <SectionLayout className={classes["hero__section-container"]}>
+        <SectionLayout className={classes["hero__section-container"]} id="hero">
             <div>
                 <h1 className={classes["pre-txt"]}>good {timeOfDay}, my name is</h1>
             </div>
@@ -18,18 +18,19 @@ const Hero = () => {
             </div>
             <div>
                 <h2 className={`${classes["large-txt"]} ${classes["large-txt-2"]}`}>
-                    I building modern web apps
+                    I build modern web apps
                 </h2>
             </div>
             <div>
                 <p className={classes["description-txt"]}>
                     Welcome to my portfolio! It's built from scratch using React and SCSS, though I
                     much rather have used styled-components, but that conversation is for another
-                    time! Anyway... hi, I'm a Fullstack engineer who specializes in the MERN stack.
+                    time! Anyway... hi, I'm a Fullstack engineer who specializes in the MERN stack,
+                    with a preference for the frontend.
                 </p>
             </div>
             <div>
-                <Button className={classes.hero__btn}>Send Email</Button>
+                <Button className={classes.hero__btn}>Resume</Button>
             </div>
         </SectionLayout>
     );

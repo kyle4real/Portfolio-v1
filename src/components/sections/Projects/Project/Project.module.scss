@@ -114,8 +114,9 @@
     }
     &__tech {
         display: flex;
+        flex-wrap: wrap;
         li {
-            cursor: pointer;
+            cursor: default;
             color: $lightGray;
             font-size: 1.1rem;
             &:not(:last-child) {

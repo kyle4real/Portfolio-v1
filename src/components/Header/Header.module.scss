@@ -1,12 +1,7 @@
 @import "./../../styles/variables.scss";
 
-.header {
+.header__container {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: $navHeight;
-    padding: 0 1.5rem;
     position: fixed;
     background: rgba($eerieBlack, 0.5);
     backdrop-filter: blur(4px);
@@ -14,6 +9,17 @@
     pointer-events: auto !important;
     user-select: auto !important;
     z-index: 100;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    width: 1920px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $navHeight;
+    padding: 0 1.5rem;
 
     @include breakpoint(md) {
         padding: 0 3rem;
@@ -46,23 +52,31 @@
 }
 
 .menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: fixed;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
-    padding: 3rem 3rem;
-    width: 70vw;
-    max-width: 400px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
     height: 100vh;
-    outline: 0px;
-    background: $eerieBlack;
     z-index: 9;
     transform: translateX(100vw);
     opacity: 0;
     transition: all 0.3s ease;
+    background: rgba($eerieBlack, 0.5);
+
+    &__content {
+        position: absolute;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 3rem;
+        height: 100%;
+        background: $eerieBlack;
+        width: 400px;
+        max-width: 100%;
+    }
 }
 
 .menu-show {

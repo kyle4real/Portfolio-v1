@@ -29,18 +29,22 @@ const Header = () => {
 
     return (
         <React.Fragment>
-            <header className={classes.header}>
-                <div className={classes["header__logo"]}>
-                    <Logo />
-                </div>
-                <Nav />
-                <div className={classes["header__menu-container"]}>
-                    <div className={classes.menu__toggle}>{menuToggle}</div>
-                    <aside className={`${classes.menu} ${menuOpen && classes["menu-show"]}`}>
-                        <Nav isMenu menuToggle={handleMenuToggle} />
-                    </aside>
-                </div>
-            </header>
+            <div className={classes["header__container"]}>
+                <header className={classes.header}>
+                    <div className={classes["header__logo"]}>
+                        <Logo />
+                    </div>
+                    <Nav />
+                    <div className={classes["header__menu-container"]}>
+                        <div className={classes.menu__toggle}>{menuToggle}</div>
+                        <aside className={`${classes.menu} ${menuOpen && classes["menu-show"]}`}>
+                            <div className={classes["menu__content"]}>
+                                <Nav isMenu menuToggle={handleMenuToggle} />
+                            </div>
+                        </aside>
+                    </div>
+                </header>
+            </div>
         </React.Fragment>
     );
 };

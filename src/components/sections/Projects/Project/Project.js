@@ -5,40 +5,37 @@ import classes from "./Project.module.scss";
 import { FaGithub } from "react-icons/fa";
 import { BiLinkExternal } from "react-icons/bi";
 
-const Project = () => {
+const Project = ({ project }) => {
+    console.log(project);
+    const { title, img, tech: techArr, demoHref, githubHref, description } = project;
     return (
         <li className={classes.project}>
             <div className={classes.project__content}>
                 <h6 className={classes.project__content__pre}>Project Spotlight</h6>
                 <h3 className={classes.project__content__title}>
-                    <a href="/">Sorting Visualizer</a>
+                    <a href={demoHref}>{title}</a>
                 </h3>
                 <Card className={classes.project__content__description}>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. In repellat
-                        dolorem facere tempore inventore velit eligendi ad amet voluptates libero.
-                    </p>
+                    <p>{description}</p>
                 </Card>
                 <ul className={classes.project__content__tech}>
-                    <li>React</li>
-                    <li>Sass</li>
+                    {techArr.map((tech, index) => (
+                        <li key={index}>{tech}</li>
+                    ))}
                 </ul>
                 <div className={classes.project__content__links}>
-                    <a href="/">
+                    <a href={githubHref}>
                         <FaGithub />
                     </a>
-                    <a href="/">
+                    <a href={demoHref}>
                         <BiLinkExternal />
                     </a>
                 </div>
             </div>
             <div className={classes.project__image}>
-                <a href="/">
+                <a href={demoHref}>
                     <div className={classes.img__wrap}>
-                        <img
-                            src="https://images.pexels.com/photos/1650730/pexels-photo-1650730.jpeg?cs=srgb&dl=pexels-oliver-sj%C3%B6str%C3%B6m-1650730.jpg&fm=jpg"
-                            alt=""
-                        />
+                        <img src={img} alt={`${title} demo display`} />
                     </div>
                 </a>
             </div>

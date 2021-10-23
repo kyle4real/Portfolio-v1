@@ -2,8 +2,14 @@ import React from "react";
 
 import classes from "./Logo.module.scss";
 
+import AnchorLink from "react-anchor-link-smooth-scroll";
+
 const Logo = ({ className }) => {
-    return <h1 className={`${classes.logo} ${className}`}>Kyle Friel</h1>;
+    return (
+        <AnchorLink className={`${classes.logo} ${className}`} href="#hero">
+            Kyle Friel
+        </AnchorLink>
+    );
 };
 
 export default Logo;
