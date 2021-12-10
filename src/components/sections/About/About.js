@@ -8,8 +8,8 @@ import { SiJavascript, SiMongodb } from "react-icons/si";
 import classes from "./About.module.scss";
 
 const technologies = [
-    { name: "HTML", img: <FaHtml5 /> },
-    { name: "CSS", img: <FaCss3Alt /> },
+    { name: "HTML5", img: <FaHtml5 /> },
+    { name: "CSS3", img: <FaCss3Alt /> },
     { name: "JavaScript", img: <SiJavascript /> },
     { name: "ReactJS", img: <FaReact className={classes.react} /> },
     { name: "Node.js", img: <FaNodeJs /> },
@@ -27,16 +27,16 @@ const About = () => {
                     <div className={classes.about}>
                         <div className={classes["about__descriptions"]}>
                             <p className={classes["description-txt"]}>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias
-                                quibusdam, molestiae earum pariatur sequi facilis aliquid
-                                voluptatibus molestias, necessitatibus temporibus natus adipisci
-                                porro accusamus vitae corporis neque culpa? Error, asperiores?
+                                A few years ago, I started building websites with platforms like
+                                Shopify and Wordpress. Overtime, I couldn't help but ponder about
+                                the interworkings of the web. Eversince, I've been obsessed with
+                                learning new techologies.
                             </p>
                             <p className={classes["description-txt"]}>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
-                                harum quasi obcaecati exercitationem ipsam reprehenderit esse quas,
-                                ipsum nobis culpa adipisci odit labore et quae a facilis sunt
-                                repellat. Tempora eum totam facere dolorem molestias.
+                                With a plethora of training, a great number of applications built,
+                                and an ineffable amount of hours dedicated; I've become confident in
+                                calling myself a software engineer. This industry has changed my
+                                life, and I'm excited to see what the future holds.
                             </p>
                         </div>
                     </div>
