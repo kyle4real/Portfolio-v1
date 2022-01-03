@@ -35,6 +35,13 @@
 
             &__tech {
                 justify-content: flex-end;
+                margin-left: auto;
+
+                li {
+                    &:not(:first-of-type) {
+                        margin-left: 1rem;
+                    }
+                }
             }
             &__links {
                 justify-content: flex-end;
@@ -43,6 +50,16 @@
 
         @include breakpoint(lg) {
             grid-column: 7 / -1;
+        }
+    }
+
+    &:nth-of-type(2n) .project__content {
+        @include breakpoint(md) {
+            &__tech li {
+                &:not(:last-of-type) {
+                    margin-right: 1rem;
+                }
+            }
         }
     }
 
@@ -115,16 +132,22 @@
     &__tech {
         display: flex;
         flex-wrap: wrap;
+        max-width: 300px;
+
         li {
             cursor: default;
             color: $lightGray;
             font-size: 1.1rem;
-            &:not(:last-child) {
+
+            &:not(:last-of-type) {
                 margin-right: 1rem;
             }
 
             @include breakpoint(md) {
                 font-size: 1rem;
+                &:not(:last-of-type) {
+                    margin-right: 0rem;
+                }
             }
         }
         margin-bottom: 1.15rem;

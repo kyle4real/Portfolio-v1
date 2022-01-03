@@ -13,7 +13,9 @@ const Project = ({ project }) => {
             <div className={classes.project__content}>
                 <h6 className={classes.project__content__pre}>Project Spotlight</h6>
                 <h3 className={classes.project__content__title}>
-                    <a href={demoHref}>{title}</a>
+                    <a href={demoHref} target={"_blank"} rel={"noreferrer"}>
+                        {title}
+                    </a>
                 </h3>
                 <Card className={classes.project__content__description}>
                     <p>{description}</p>
@@ -27,13 +29,13 @@ const Project = ({ project }) => {
                     <a href={githubHref}>
                         <FaGithub />
                     </a>
-                    <a href={demoHref}>
+                    <a href={demoHref} target={"_blank"} rel={"noreferrer"}>
                         <BiLinkExternal />
                     </a>
                 </div>
             </div>
             <div className={classes.project__image}>
-                <a href={demoHref}>
+                <a href={demoHref} target={"_blank"} rel={"noreferrer"}>
                     <div className={classes.img__wrap}>
                         <img src={img} alt={`${title} demo display`} />
                     </div>

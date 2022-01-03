@@ -24,10 +24,10 @@ Projects.defaultProps = {
     projectsArr: [
         {
             type: "spotlight",
-            title: "Sorting Visualizer",
-            img: "https://images.pexels.com/photos/1650730/pexels-photo-1650730.jpeg?cs=srgb&dl=pexels-oliver-sj%C3%B6str%C3%B6m-1650730.jpg&fm=jpg",
-            tech: ["React", "Sass"],
-            demoHref: "/",
+            title: "Ecom Site + Admin CMS",
+            img: "https://res.cloudinary.com/dvvqcr28s/image/upload/v1641171766/Portfolio/fullstack-ecom.png",
+            tech: ["React", "styled-components", "NodeJs", "MongoDB", "Cloudinary", "Stripe"],
+            demoHref: "https://astrovinylart-v2.xyz/",
             githubHref: "/",
             description:
                 "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In repellat dolorem facere tempore inventore velit eligendi ad amet voluptates libero.",
