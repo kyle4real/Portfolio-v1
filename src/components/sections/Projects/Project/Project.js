@@ -26,9 +26,11 @@ const Project = ({ project }) => {
                     ))}
                 </ul>
                 <div className={classes.project__content__links}>
-                    <a href={githubHref}>
-                        <FaGithub />
-                    </a>
+                    {!!githubHref && (
+                        <a href={githubHref} target={"_blank"} rel={"noreferrer"}>
+                            <FaGithub />
+                        </a>
+                    )}
                     <a href={demoHref} target={"_blank"} rel={"noreferrer"}>
                         <BiLinkExternal />
                     </a>

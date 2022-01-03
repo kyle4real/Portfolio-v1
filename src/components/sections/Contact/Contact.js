@@ -38,10 +38,8 @@ const Contact = () => {
                 <div className={classes.content}>
                     <h1 className={classes.content__pre}>Lets get in touch.</h1>
                     <p className={classes.content__description}>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem expedita
-                        error unde delectus fuga odit, asperiores ipsa eos incidunt hic. Lorem
-                        ipsum, dolor sit amet consectetur adipisicing elit. Molestias, laboriosam.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing.
+                        Feel free to reach out to me about anything. Thank you for taking the time
+                        to look over my portfolio. Have a great day!
                     </p>
                     <Button className={classes.content__btn}>Send Email</Button>
                 </div>
