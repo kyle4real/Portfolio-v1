@@ -30,7 +30,7 @@ Projects.defaultProps = {
             demoHref: "https://astrovinylart-v2.xyz/",
             githubHref: "https://github.com/kyle4real/fullstack-ecom",
             description:
-                "An ecommerce site with cart and checkout. User authentication. Admin CMS for creating, updating, and deleting products, variants, media, and collections.",
+                "An ecommerce site with cart and checkout. User authentication. Admin CMS for creating, updating, and deleting products, variants, media, and collections. ADMIN LOGIN: kyle@gmail.com 123456",
         },
         {
             type: "spotlight",
