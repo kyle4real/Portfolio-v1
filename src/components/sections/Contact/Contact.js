@@ -41,7 +41,14 @@ const Contact = () => {
                         Feel free to reach out to me about anything. Thank you for taking the time
                         to look over my portfolio. Have a great day!
                     </p>
-                    <Button className={classes.content__btn}>Send Email</Button>
+                    <Button
+                        className={classes.content__btn}
+                        onClick={() =>
+                            window.open("mailto:businessfriel@gmail.com?subject=Portfolio")
+                        }
+                    >
+                        Send Email
+                    </Button>
                 </div>
                 <div className={classes.contact__img}>
                     <img src={ContactSVG} alt="" />

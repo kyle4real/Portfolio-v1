@@ -24,7 +24,17 @@ const Nav = ({ isMenu, menuToggle }) => {
                     <AnchorLink href="#blog">Blog</AnchorLink>
                 </li> */}
             </ul>
-            <Button className={classes["nav__resume"]}>Resume</Button>
+            <Button
+                className={classes["nav__resume"]}
+                onClick={() =>
+                    window.open(
+                        "https://docs.google.com/document/d/1-LZNo6wcRuh2XUXsANNkEdBvRnPctxDxYKKg2lVaf8k/edit?usp=sharing",
+                        "_blank"
+                    )
+                }
+            >
+                Resume
+            </Button>
         </nav>
     );
 };

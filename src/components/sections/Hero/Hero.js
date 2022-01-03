@@ -28,7 +28,17 @@ const Hero = () => {
                 </p>
             </div>
             <div>
-                <Button className={classes.hero__btn}>Resume</Button>
+                <Button
+                    className={classes.hero__btn}
+                    onClick={() =>
+                        window.open(
+                            "https://docs.google.com/document/d/1-LZNo6wcRuh2XUXsANNkEdBvRnPctxDxYKKg2lVaf8k/edit?usp=sharing",
+                            "_blank"
+                        )
+                    }
+                >
+                    Resume
+                </Button>
             </div>
         </SectionLayout>
     );
